@@ -9,8 +9,8 @@
 
 <body>
   <div class="container">
-    <h1 id="playerText"></h1>
-    <a href="/one-player.html" class="mode-btn">Vs Computador</a>
+    <h1 id="playerText"> Jogo da Velha</h1>
+    <a href="/index.html" class="mode-btn"> 2 jogadores</a>
     <button id="restartBtn"> Recomeçar</button>
 
     <div id="gameboard">
@@ -24,14 +24,23 @@
       <div class="box" id="7"></div>
       <div class="box" id="8"></div>
     </div>
-    <div id = "scoreboard">
-      <p> X - <span id ="x-points">0</span>  </p>
+    <div id="scoreboard">
+      <p> X - <span id="x-points">0</span> </p>
       <p>VS</p>
-      <p>O - <span id ="o-points">0</span></p>
+      <p>O - <span id="o-points">0</span></p>
+    </div>
+
+    <div id="difficulty-board">
+      <p>Nível: </p>
+      <select name="" id="difficulty-select">
+        <option value="1">Fácil</option>
+        <option value="2">Médio</option>
+        <option value="3">Difícil</option>
+      </select>
     </div>
   </div>
 
-  <script src ="main.js"> </script>
+  <script type="module" src="/one-player.js"></script>
 </body>
 
 </html>
